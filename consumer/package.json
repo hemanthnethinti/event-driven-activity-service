@@ -1,0 +1,30 @@
+{
+  "name": "event-activity-consumer",
+  "version": "1.0.0",
+  "description": "Event-driven user activity consumer worker for RabbitMQ",
+  "main": "src/worker.js",
+  "scripts": {
+    "start": "node src/worker.js",
+    "dev": "nodemon src/worker.js",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "keywords": [
+    "event-driven",
+    "rabbitmq",
+    "activity-tracking",
+    "message-consumer"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "^7.0.0",
+    "amqplib": "^0.10.3",
+    "dotenv": "^16.0.3",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "nodemon": "^2.0.22"
+  }
+}
